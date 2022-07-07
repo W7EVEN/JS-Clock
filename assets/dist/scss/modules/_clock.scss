@@ -1,0 +1,44 @@
+@use "../base/variables";
+
+.container-clock {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  background-color: variables.$background-color;
+  box-shadow: 10px 50px 70px rgba($color: #000000, $alpha: 0.25),
+    inset 5px 5px 10px rgba($color: #000000, $alpha: 0.5),
+    inset 5px 5px 20px rgba($color: #ffffff, $alpha: 0.2),
+    inset -5px -5px 15px rgba($color: #000000, $alpha: 0.75);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: variables.$background-color;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    z-index: 1000000;
+  }
+
+  span {
+    position: absolute;
+    inset: 20px;
+    color: #fff;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+
+    b {
+      font-size: 2em;
+      opacity: 0.25;
+      font-weight: 600;
+      display: inline-block;
+      transform: rotate(calc(-30deg * var(--i)));
+    }
+  }
+}

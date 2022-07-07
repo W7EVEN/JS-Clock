@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analog clock</title>
+    <link rel="stylesheet" href="./assets/dist/css/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="container-clock">
+          <div
+            style="--pointer-color: #04fc43"
+            id="seconds"
+            class="container-clock-circle"
+          >
+            <i></i>
+          </div>
+          <div
+            style="--pointer-color: #fee800"
+            id="minutes"
+            class="container-clock-circle circle2"
+          >
+            <i></i>
+          </div>
+          <div
+            style="--pointer-color: #ff2972"
+            id="hours"
+            class="container-clock-circle circle3"
+          >
+            <i></i>
+          </div>
+
+          <span style="--i: 1"><b>1</b></span>
+          <span style="--i: 2"><b>2</b></span>
+          <span style="--i: 3"><b>3</b></span>
+          <span style="--i: 4"><b>4</b></span>
+          <span style="--i: 5"><b>5</b></span>
+          <span style="--i: 6"><b>6</b></span>
+          <span style="--i: 7"><b>7</b></span>
+          <span style="--i: 8"><b>8</b></span>
+          <span style="--i: 9"><b>9</b></span>
+          <span style="--i: 10"><b>10</b></span>
+          <span style="--i: 11"><b>11</b></span>
+          <span style="--i: 12"><b>12</b></span>
+        </div>
+
+        <div id="container-time">
+          <div id="container-time-hours" style="--time-color: #ff2972"></div>
+          <div id="container-time-minutes" style="--time-color: #fee800"></div>
+          <div id="container-time-seconds" style="--time-color: #04fc43"></div>
+          <div id="container-time-ampm"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/dist/js/main.js"></script>
+  </body>
+</html>
